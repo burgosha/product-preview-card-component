@@ -1,0 +1,108 @@
+:root {
+    --maintFont: 'Montserrat', sans-serif;
+    --titleFont: 'Fraunces', serif;
+    /* Primary Colors */
+    --darkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* Neutral Colors */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+h1, .product-price {
+    color: var(--veryDarkBlue);
+    font-family: var(--titleFont);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+}
+.container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.product-image, .product-info {
+    width: 300px;
+    height: 450px;
+}
+.product-image img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.product-info {
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 0 10px 10px 0;
+}
+.product-type p {
+    font-family: var(--maintFont);
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--darkGrayishblue);
+}
+.product-description p {
+    color: var(--darkGrayishblue);
+    font-family: var(--maintFont);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 23px;
+
+}
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.price {
+    color: var(--darkCyan);
+}
+.original-price {
+    color: var(--darkGrayishblue);
+    font-family: var(--maintFont);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration: line-through;
+}
+.add-to-cart {
+    width: 236px;
+    height: 48px;
+    background-color: var(--darkCyan);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px auto 0;
+}
+.add-to-cart img {
+    height: 16px;
+}
+.add-to-cart p {
+    font-family: var(--maintFont);
+    font-weight: 700;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 17px;
+
+}
