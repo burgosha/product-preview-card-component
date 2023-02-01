@@ -29,34 +29,66 @@ h1, .product-price {
     font-family: var(--titleFont);
     font-weight: bold;
     font-size: 32px;
-    line-height: 32px;
+    margin: 0;
 }
 .container {
-    width: 600px;
-    height: 450px;
+    width: 343px;
+    height: 611px;
+    background-color: var(--white);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    border-radius: 10px;
     margin: 10px;
 }
-.product-image, .product-info {
-    width: 300px;
-    height: 450px;
-}
-.product-image img {
-    width: 100%;
-    border-radius: 10px 0 0 10px;
+.product-image {
+    width: 343px;
+    height: 240px;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
 }
 .product-info {
-    background-color: var(--white);
+    width: 343px;
+    height: 371px;
+}
+@media (min-width: 375px) {
+    .container {
+        width: 600px;
+        height: 450px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+    }
+    .product-image, .product-info {
+        width: 300px;
+        height: 450px;
+    }
+    .product-image {
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+.product-info {
+
     padding: 32px;
     border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .product-type p {
     font-family: var(--maintFont);
     font-size: 12px;
-    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
     text-transform: uppercase;
     color: var(--darkGrayishblue);
+    margin: 0;
 }
 .product-description p {
     color: var(--darkGrayishblue);
@@ -65,6 +97,7 @@ h1, .product-price {
     font-style: normal;
     font-size: 14px;
     line-height: 23px;
+    margin: 0;
 
 }
 .product-price {
@@ -81,7 +114,6 @@ h1, .product-price {
     font-weight: 500;
     font-style: normal;
     font-size: 13px;
-    line-height: 23px;
     text-decoration: line-through;
 }
 .add-to-cart {
@@ -92,8 +124,7 @@ h1, .product-price {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    margin: 30px auto 0;
+    column-gap: 12px;
 }
 .add-to-cart img {
     height: 16px;
@@ -103,6 +134,5 @@ h1, .product-price {
     font-weight: 700;
     color: var(--white);
     font-size: 14px;
-    line-height: 17px;
 
 }
