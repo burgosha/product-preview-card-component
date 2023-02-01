@@ -8,6 +8,8 @@
     --veryDarkBlue: hsl(212, 21%, 14%);
     --darkGrayishblue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
+    /* Hover color */
+    --verydarkCyan: hsl(159, 34%, 24%);
 }
 html {
     box-sizing: border-box;
@@ -121,12 +123,17 @@ h1, .product-price {
 .add-to-cart {
     width: 100%;
     height: 48px;
+    cursor: pointer;
     background-color: var(--darkCyan);
+    border: none;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 12px;
+}
+.add-to-cart:hover {
+    background-color: var(--verydarkCyan);
 }
 .add-to-cart img {
     height: 16px;
